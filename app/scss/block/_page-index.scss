@@ -1,0 +1,13 @@
+.page-index {
+	&__mobile-menu {
+		position: fixed;
+		z-index: 10;
+		width: 100%;
+		top: var(--header-height);
+		left: 0;
+		height: calc(100vh - var(--header-height));
+	}
+	&__about {
+		position: relative;
+	}
+}

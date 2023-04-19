@@ -1,0 +1,46 @@
+.catalog {
+	padding: 38px 0 84px 0;
+	&__caption {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title-wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.04em;
+	}
+	&__breadcrumbs {
+		margin-bottom: 40px;
+	}
+	&__view-tabs {
+		display: none;
+		font-size: 0;
+	}
+	&__view-tab {
+		display: inline-block;
+		cursor: pointer;
+	}
+	&__view-tab:first-child {
+		margin-right: 10px;
+	}
+	&__view-tab.tab--active svg {
+		fill: var(--main-color);
+	}
+	&__mobile-filter {
+		display: none;
+	}
+	&__btn-back {
+		display: none;
+		padding-right: 16px;
+	}
+	&__btn-back svg {
+		display: block;
+	}
+}

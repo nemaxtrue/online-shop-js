@@ -1,0 +1,28 @@
+.more-color {
+	&__inner {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__content:hover &__color-select {
+		display: block;
+	}
+	&__content:hover &__title {
+		opacity: 0;
+	}
+	&__title {
+		color: var(--main-color-opacity);
+		border-bottom: 1px solid var(--main-color-opacity);
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	&__color-select {
+		transition: 0.3s;
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+}

@@ -1,0 +1,46 @@
+.about {
+	position: relative;
+	padding: 100px 0;
+	background-image: url('../img/caress-gray.svg');
+	background-repeat: no-repeat;
+	background-position: center 40%;
+	background-size: 90%;
+	text-align: center;
+	&__title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.04em;
+		margin-bottom: 28px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.01em;
+		margin-bottom: 44px;
+		padding: 0 100px;
+	}
+	&__text-main {
+		display: block;
+	}
+	&__text-mobile {
+		display: none;
+	}
+	&__ticker-top {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	&__ticker-bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+
+
+	}
+}

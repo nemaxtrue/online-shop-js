@@ -1,0 +1,8 @@
+.select-drop {
+	&__list {
+		display: none;
+	}
+	&__list--active {
+		display: block;
+	}
+}

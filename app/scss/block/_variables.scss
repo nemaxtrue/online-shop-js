@@ -1,0 +1,37 @@
+:root {
+	// COLOR
+	--main-color: #5A6885;
+	--main-color-opacity: rgba(90, 104, 133, 0.7);
+	--mobile-menu-border: rgba(90, 104, 133, 0.2);
+	--white: white;
+	--lightgray: #F8F8F8;
+	--discount-bg-1: #DBDEE5;
+	--discount-bg-2: #FFF1EE;
+	--discount-bg-3: #EAEAEA;
+	--gender-color: #C7CDD7;
+	--form-bg: #FFF1EE;
+	--light-pink: #FFF1EE;
+	--gray: #DBDEE5;
+	--placeholder-color: rgba(111, 119, 143, 0.6);
+	--btn-action-hover: #637292;
+	--btn-action-active: #3F4C67;
+	--checkbox-beige: rgba(233, 217, 187, 0.7);
+	--checkbox-pink: #FFE3DA;
+	--checkbox-green: #A3DD87;
+	--checkbox-orange: rgba(255, 173, 50, 0.7);
+	--checkbox-black: black;
+	--checkbox-white: white;
+	--checkbox-lightblue: lightblue;
+	--checkbox-red: #F54336;
+	--checkbox-blue: #3F51B6;
+	--checkbox-yellow: #FFEB3C;
+	--checkbox-violet: #683AB7;
+	--custom-weight: 0.4px var(--main-color);
+	--slider-arrow-hover: #002137;
+
+	// SIZE
+	--header-height: 70px;
+}
+
+
+

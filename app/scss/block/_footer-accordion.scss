@@ -1,0 +1,5 @@
+.footer-accordion {
+	&__item--active .footer__title::after {
+		transform: rotate(180deg);
+	}
+}

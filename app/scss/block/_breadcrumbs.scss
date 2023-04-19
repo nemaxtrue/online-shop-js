@@ -1,0 +1,31 @@
+.breadcrumbs {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		margin-right: 12px;
+	}
+	&__item:not(:last-child)::after {
+		content: '/';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(8px, -50%);
+		height: 10px;
+		font-size: 11px;
+		color: var(--main-color-opacity);
+	}
+	&__item:last-child {
+		cursor: default;
+		pointer-events: none;
+		-webkit-text-stroke: var(--custom-weight);
+	}
+	&__link {
+		color: var(--main-color-opacity);
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.01em;
+	}
+}

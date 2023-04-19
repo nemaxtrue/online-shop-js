@@ -1,0 +1,23 @@
+.pagination {
+	display: flex;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.01em;
+	color: var(--main-color-opacity);
+	&__list {
+		padding: 0 10px;
+		display: flex;
+	}
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+	&__item--active {
+		color: var(--main-color);
+		-webkit-text-stroke: var(--custom-weight);
+	}
+	&__link {
+		color: inherit;
+		text-shadow: inherit;
+	}
+}

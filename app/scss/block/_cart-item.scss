@@ -1,0 +1,122 @@
+.cart-item {
+	&:not(:last-child) {
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid var(--main-color-opacity);
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+		display: block;
+		object-fit: cover;
+	}
+	&__img-link {
+		display: block;
+	}
+	&__img-wrap {
+		flex-shrink: 0;
+		width: 190px;
+	}
+	&__info {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-auto-rows: minmax(min-content, max-content) 
+		minmax(min-content, max-content) 1fr;
+		grid-gap: 0 10px;
+	}
+	&__trash-wrap {
+		justify-self: end;
+		grid-column: span 2;
+	}
+	&__text {
+		max-width: 270px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__code {
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.03em;
+		margin-bottom: 6px;
+		white-space: nowrap;
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		// white-space: nowrap; 
+  //   	overflow: hidden; 
+  //   	text-overflow: ellipsis; 
+	}
+	&__counter {
+		width: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		justify-self: end;
+		align-self: end;
+	}
+	&__price {
+		font-weight: 400;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		font-size: 18px;
+		justify-self: end;
+		align-self: end;
+		white-space: nowrap;
+	}
+	&__counter-input {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		padding: 0 8px;
+		color: var(--main-color);
+	}
+	&__counter-btn-pluse, 
+	&__counter-btn-minus {
+		svg {
+			display: block;
+		}
+		flex-shrink: 0;
+		height: 22px;
+		width: 22px;
+		background: var(--gray);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+	}
+	&__feature {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 13px;
+		align-self: end;
+	}
+	&__feature-item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__feature-title {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.01em;
+	}
+	&__feature-current {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.01em;
+	}
+}
+
+

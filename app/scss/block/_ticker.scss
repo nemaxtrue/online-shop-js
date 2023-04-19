@@ -1,0 +1,51 @@
+.ticker {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	overflow: hidden;
+	// background: #AFB8C9;
+	background: #AFB8C9;
+	color: var(--white);
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	text-rendering: optimizeLegibility;
+	&--bottom {
+		justify-content: end;
+	}
+	&__item {
+		animation: run infinite linear 3s;
+	}
+	&__item::after {
+		content: '\2219';
+		padding: 0 20px;
+		vertical-align: middle;
+	}
+	&--top &__item {
+		animation: runLeft infinite linear 3s;
+	}
+
+	&--bottom &__item {
+		animation: runRight infinite linear 3s;
+	}
+}
+
+
+@keyframes runLeft {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+@keyframes runRight {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 0, 0);
+	}
+}

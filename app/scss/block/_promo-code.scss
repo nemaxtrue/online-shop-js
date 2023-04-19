@@ -1,0 +1,65 @@
+.promo-code {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__label {
+		position: relative;
+		display: inline;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+	}
+	.active &__label::after {
+		position: absolute;
+		top: 2px;
+		right: -24px;
+		content: url('../img/check.svg');
+	}
+	&__input {
+		width: 100%;
+		max-width: 50%;
+		color: var(--main-color);
+		border-bottom: 1px solid var(--main-color);
+		font-size: 16px;
+		transition: color 0.3s;
+		padding-top: 14px;
+	}
+	&__input::placeholder {
+		opacity: 0.5;
+		color: var(--main-color);
+	}
+	&__input.wrong {
+		animation-name: shake;
+		animation-duration: 0.5s;
+		border-bottom: 1px solid #EB4C42;
+		color: #EB4C42;
+	}
+	&__input.wrong::placeholder {
+		color: #EB4C42;
+	}
+	&__input:disabled {
+		opacity: 0.5;
+	}
+	// &__label-check {
+	// 	display: none;
+	// 	position: absolute;
+	// 	top: 2px;
+	// 	right: -24px;
+	// }
+	// .active &__label-check {
+	// 	display: block;
+	// }
+}
+
+
+@keyframes shake {
+  0%, 40%, 80%{
+    transform: translateX(-2px);
+  }
+  20%, 60%, 100%{
+    transform: translateX(2px);
+  }
+}

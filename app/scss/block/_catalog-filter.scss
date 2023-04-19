@@ -1,0 +1,112 @@
+.catalog-filter {
+	&__top {
+		border-top: 1px solid var(--main-color-opacity);
+		border-bottom: 1px solid var(--main-color-opacity);
+		margin-bottom: 34px;
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 34px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item:not(:last-child) {
+		position: relative;
+		// margin-right: 140px;
+	}
+	&__item--active .drop-filter {
+		display: block;
+	}
+	&__item--active &__btn::after {
+		transform: translateY(-50%) rotate(180deg);
+	}
+	&__btn {
+		padding: 17px 16px 17px 0;
+		color: var(--main-color-opacity);
+		display: flex;
+		align-items: center;
+	}
+	&__btn::after {
+		content: url('../img/arrow-down.svg');
+		position: absolute;
+		top: 50%;
+		right: 0px;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		margin-top: 1px;
+		transition: transform 0.3s;
+	}
+	&__drop {
+		position: absolute;
+		left: 0;
+		bottom: -8px;
+		transform: translateY(100%);
+		margin-top: 10px;
+		display: none;
+	}
+	&__size .drop-filter__label {
+		text-transform: uppercase;
+	}
+	&__clear-filter-btn {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.01em;
+		color: var(--main-color-opacity);
+		text-align: right;
+		padding: 17px 0;
+	}
+	&__clear-filter-btn::after {
+		content: none;
+	}
+	&__sort {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.01em;
+		color: var(--main-color-opacity);
+		display: flex;
+	}
+	&__sort-btn {
+		font-weight: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		margin-left: 10px;
+	}
+	&__sort-btn.tab--active {
+		color: var(--main-color);
+		-webkit-text-stroke: var(--custom-weight);
+	}
+	.toggle-price {
+		position: relative;
+		padding-right: 10px;
+	}
+	.toggle-price--up.tab--active::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: url('../img/arow-price.svg');
+		transform: rotate(180deg);	
+	}
+	.toggle-price--down.tab--active::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: url('../img/arow-price.svg');
+	}
+
+	&__amount-goods {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 15px;
+		letter-spacing: 0.01em;
+		color: var(--main-color);
+	}
+}

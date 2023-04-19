@@ -1,0 +1,131 @@
+.product-card-filter {
+	&__code {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		margin-bottom: 10px;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: 0.04em;
+		margin-bottom: 21px;
+		max-width: 300px;
+
+	}
+	&__price {
+		font-weight: 400px;
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: 0.04em;
+		margin-bottom: 53px;
+	}
+
+	&__select-color {
+		padding-bottom: 18px;
+		border-bottom: 1px solid var(--main-color-opacity);
+		margin-bottom: 50px;
+	}
+	&__select-color-title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
+	}
+
+	&__select-color-tabs {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	&__select-color-tab {
+		height: 30px;
+		width: 30px;
+		border-radius: 100%;
+		overflow: hidden;
+	}
+
+	&__select-color-tab.tab--active {
+		padding: 2px;
+		border: 1px solid var(--main-color);
+	}
+	&__select-color-img {
+		border-radius: 100%;
+		height: 100%;
+		width: 100%;
+	}
+	&__compound {
+		padding-bottom: 20px;
+		border-bottom: 1px solid var(--main-color-opacity);
+		margin-bottom: 40px;
+	}
+	&__compound-title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
+	}
+	&__compound-description {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+	}
+
+	&__size {
+		border-bottom: 1px solid var(--main-color-opacity);
+		margin-bottom: 57px;
+	}
+	&__size-title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
+	}
+	&__size-tabs {
+		display: flex;
+		padding-bottom: 18px;
+		gap: 20px;
+	}
+	&__size-tab {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: var(--main-color-opacity);
+		cursor: pointer;
+	}
+	&__size-tab.tab--active {
+		color: var(--main-color);
+		-webkit-text-stroke: var(--custom-weight);
+	}
+	&__btn {
+		padding: 18px 28px;
+		margin-bottom: 68px;
+	}
+	&__info {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		white-space: nowrap;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__info-img {
+		margin-right: 10px;
+	}
+	&__info-delivery,
+	&__info-return {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+}

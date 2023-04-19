@@ -1,0 +1,27 @@
+.sneakers {
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr 1fr;
+	}
+	&__item {
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	&__item-large {
+		grid-row: span 2;
+	}
+	&__img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: cover;
+		transition: 0.3s;
+	}
+	&__btn {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10%;
+	}
+}

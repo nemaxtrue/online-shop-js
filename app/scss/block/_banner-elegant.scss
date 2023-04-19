@@ -1,0 +1,21 @@
+.banner-elegant {
+	background: url('../img/hero-banner-3-l.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	&__inner {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		font-weight: 600;
+		position: relative;
+		font-size: 55px;
+		line-height: 63px;
+		letter-spacing: 0.06em;
+		margin-bottom: 35px;
+		margin-left: -3px;
+	}
+}

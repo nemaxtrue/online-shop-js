@@ -1,0 +1,48 @@
+.sneakers-mobile {
+	display: none;
+	&__slider {
+		position: relative;
+		height: 100vh;
+	}
+	&__slide {
+		position: relative;
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: center center;
+		display: block;
+	}
+	&__btn {
+		position: absolute;
+		left: 50%;
+		bottom: 100px;
+		transform: translateX(-50%);
+	}
+	&__nav {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+	&__pagination {
+		display: flex;
+	}
+	&__pagination .swiper-pagination-bullet {
+		display: block;
+		height: 10px;
+		width: 10px;
+		border: 1px solid var(--main-color);
+		border-radius: 100%;
+		cursor: pointer;
+	}
+	&__pagination .swiper-pagination-bullet:not(:last-child) {
+		margin-right: 7px;
+	}
+	&__pagination .swiper-pagination-bullet-active {
+		background: var(--main-color);
+	}
+}
+

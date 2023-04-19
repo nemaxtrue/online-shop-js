@@ -1,0 +1,94 @@
+.set-price {
+	width: 100%;
+	max-width: 300px;
+	&__range {
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__range-inner {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin: 0 10px;
+		height: 16px;
+		pointer-events: none;
+	}
+	input[type="range"] {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		appearance: none;
+		width: 100%;
+		pointer-events: none;
+		background: transparent;
+		opacity: 0;
+	}
+	input[type="range"]::-webkit-slider-thumb {
+		pointer-events: auto;
+		appearance: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 100%;
+		cursor: pointer;
+	}
+	input[type="range"]::-moz-range-thumb {
+		pointer-events: auto;
+		appearance: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 100%;
+		cursor: pointer;
+	}
+	&__range-progress {
+		position: absolute;
+		height: 3px;
+		background: var(--main-color);
+	}
+	&__range-track {
+		position: absolute;
+		left: -8px;
+		right: -8px;
+		height: 1px;
+		background: rgba(90, 104, 133, 0.5);
+	}
+	&__range-thumb-min, 
+	&__range-thumb-max {
+		position: absolute;
+		height: 16px;
+		width: 16px;
+		background: var(--main-color);
+		border-radius: 100%;
+		cursor: pointer;
+		transition:box-shadow .2s ease-in-out;
+	}
+	&__range-thumb-min {
+		transform: translateX(-50%);
+	}
+	&__range-thumb-max {
+		transform: translateX(50%);
+	}
+	&__range-thumb--hover {
+		box-shadow:0 0 0 6px rgba(98,0,238, 0.1);
+	}
+	&__inputs {
+		display: flex;
+		justify-content: space-between;
+		gap: 100px;
+		color: var(--main-color);
+	}
+	&__input-min, &__input-max {
+		width: 100%;
+		color: inherit;
+		border-bottom: 1px solid;
+	}
+	&__label {
+		width: 200px;
+		display: flex;
+	}
+	&__text {
+		margin-right: 14px;
+	}
+
+}
+

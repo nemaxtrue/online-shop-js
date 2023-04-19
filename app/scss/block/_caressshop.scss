@@ -1,0 +1,64 @@
+.caressshop {
+	padding: 80px 0;
+	&__content {
+		position: relative;
+	}
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.04em;
+		margin-bottom: 48px;
+	}
+	&__slider {
+		user-select: none;
+		
+	}
+	&__link {
+		display: block;
+		height: 100%;
+		width: 100%;
+		max-width: 295px;
+		min-height: 0;
+		max-height: 295px;
+	}
+	&__btn-prev, &__btn-next {
+		cursor: pointer;
+	}
+	&__btn-prev:hover path, &__btn-next:hover path {
+		fill: black;
+	}
+	&__img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	&__slider-nav {
+		margin-top: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 9;
+	}
+	&__pagination {
+		cursor: pointer;
+		padding: 0 20px;
+		display: flex;
+	}
+	&__pagination .swiper-pagination-bullet {
+		display: block;
+		height: 12px;
+		width: 12px;
+		border-radius: 100%;
+		border: 1px solid var(--main-color);
+	}
+	&__pagination .swiper-pagination-bullet:not(:last-child) {
+		margin-right: 9px;
+	}
+	&__pagination .swiper-pagination-bullet-active {
+		background: var(--main-color);
+	}
+}
+

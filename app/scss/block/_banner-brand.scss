@@ -1,0 +1,23 @@
+.banner-brand {
+	background-image: url('../img/hero-banner-2-l.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	&__inner {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+	&__content {
+	}
+	&__title {
+		font-size: 55px;
+		font-weight: 600;
+		line-height: 65px;
+		letter-spacing: 0.06em;
+		margin-bottom: 35px;
+		margin-left: -6px;
+	}
+}

@@ -1,0 +1,43 @@
+.hero {
+	.container {
+		height: 100%;
+	}
+	&__slide {
+		height: calc(100vh - var(--header-height));
+	}
+	&__slider-nav {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		left: 50%;
+		bottom: 30px;
+		transform: translateX(-50%);
+		display: flex;
+		z-index: 9;
+	}
+	&__btn-prev, &__btn-next {
+		cursor: pointer;
+	}
+	&__btn-prev:hover path, &__btn-next:hover path {
+		fill: var(--slider-arrow-hover);
+	}
+	&__pagination {
+		cursor: pointer;
+		padding: 0 20px;
+		display: flex;
+	}
+	&__pagination .swiper-pagination-bullet {
+		display: block;
+		height: 12px;
+		width: 12px;
+		border-radius: 100%;
+		border: 1px solid var(--main-color);
+	}
+	&__pagination .swiper-pagination-bullet:not(:last-child) {
+		margin-right: 9px;
+	}
+	&__pagination .swiper-pagination-bullet-active {
+		background: var(--main-color);
+	}
+}
+

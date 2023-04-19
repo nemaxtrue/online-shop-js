@@ -1,0 +1,37 @@
+.header-menu {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	display: flex;
+	&__item {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+	}
+	&__drop {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: translateY(100%);
+		display: none;
+	}
+	&__drop::first-child {
+		display: block;
+		background: gray;
+	}
+	&__drop--active {
+		display: block;
+	}
+	&__drop--hide {
+		display: none;
+	}
+	&__link {
+		cursor: pointer;
+		white-space: nowrap;
+	}
+	&__link:hover {
+		-webkit-text-stroke: var(--custom-weight);
+	}
+}
+

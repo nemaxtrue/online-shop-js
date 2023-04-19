@@ -1,0 +1,47 @@
+.cart-summary {
+	padding: 60px 0px 60px 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&__title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.01em;
+		margin-bottom: 40px;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+	}
+	&__total-price {
+		margin-bottom: 20px;
+	}
+	&__delivery-price {
+		padding-bottom: 15px;
+		border-bottom: 1px solid var(--main-color-opacity);
+		margin-bottom: 30px;
+	}
+	&__tax-price {
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	&__promo-code {
+		margin-bottom: 30px;
+
+	}
+	&__payment-method {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		margin-bottom: 40px;
+	}
+
+}

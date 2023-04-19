@@ -1,0 +1,64 @@
+.double-slider {
+	display: flex;
+	gap: 0 20px;
+	&__vertical {
+		width: 100%;
+		max-width: 160px;
+		flex-shrink: 1;
+		cursor: pointer;
+	}
+	&__horizontal {
+		width: 100%;
+		max-width: 505px;
+		flex-shrink: 1.2;
+		flex-grow: 1;
+		cursor: pointer;
+	}
+	&__horizontal:hover &__nav {
+		opacity: 1;
+	}
+	&__vertical-img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	&__horizontal-slide {
+		position: relative;
+	}
+	&__horizontal-img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+		transform: translate(-50%,-50%) scale(1);
+	}
+	&__nav {
+		opacity: 0;
+		transition: opacity 0.3s;
+		position: absolute;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 9;
+		cursor: pointer;
+		pointer-events: none;
+	}
+	&__nav-btn-prev, &__nav-btn-next {
+		pointer-events: all;
+	}
+	&__nav-img {
+		display: block;
+		padding: 30px 20px;
+	}
+}
+
+

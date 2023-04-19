@@ -1,0 +1,37 @@
+.novelty-video {
+	position: relative;
+	display: inline-block;
+	&__img {
+		display: block;
+		object-fit: cover;
+	}
+	&__btn {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(50%, -50%);
+		width: 60px;
+		height: 60px;
+		background: var(--white);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+		box-shadow: 0px 0px 8px rgba(19, 34, 66, 0.06);
+		transition: transform 0.3s;
+	}
+	&__btn:hover {
+		transform: translate(50%, -50%) scale(1.1);
+	}
+	&__triangle {}
+	&__btn::after {
+		position: absolute;
+		right: -110px;
+		content: 'смотреть видео';
+		width: 90px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		letter-spacing: 0.03em;
+	}
+}
