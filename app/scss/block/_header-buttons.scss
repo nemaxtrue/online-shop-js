@@ -11,12 +11,11 @@
 	}
 	&__cart {
 		position: relative;
-		padding-right: 18px;
 	}
 	&__amount {
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		bottom: -6px;
+		right: -6px;
 		height: 16px;
 		width: 16px;
 		font-size: 9px;

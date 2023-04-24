@@ -10,14 +10,17 @@ burger.onclick = function() {
 
 // MOBILE MENU SELECT ITEM
 mobileMenu.onclick = function(event) {
-	let target = event.target;
-	if(target.closest('.mobile-menu__item')) {
-		let item = target.closest('.mobile-menu__item');
-		item.classList.add('mobile-menu__item--active');
+	let target = event.target;									
+	let item = target.closest('.submenu__item');
+	let parent = target.closest('.submenu__parent-item');
+
+	if(item) {
+		item.classList.add('submenu__item--active');
+
 	}
-	if(target.closest('.mobile-menu__parent-item')) {
-		let item = target.closest('.mobile-menu__item');
-		item.classList.remove('mobile-menu__item--active');
+	if(parent) {
+		item.classList.remove('submenu__item--active');
+
 	}
 }
 

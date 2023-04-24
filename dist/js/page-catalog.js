@@ -13,10 +13,6 @@ let favoriteItems     	= document.querySelectorAll('.product-item__favorite-btn'
 
 
 
-
-
-
-
 // DROP FILTER
 filterDrop.addEventListener('click', dropFilter);
 function dropFilter(event) {

@@ -1,7 +1,4 @@
-
 let promoCodeBtn = document.querySelector('.promo-code__btn');
-
-
 
 promoCodeBtn.addEventListener('click', function(e) {
 	let promoCode = this.closest('.promo-code');
@@ -30,9 +27,5 @@ promoCodeBtn.addEventListener('click', function(e) {
 			input.disabled = false;
 		}
 	}
-	
-
-
-
 })
 

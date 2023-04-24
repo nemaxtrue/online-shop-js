@@ -637,6 +637,11 @@
 			margin-bottom: 20px;
 		}
 	}
+	.page-cart {
+		&__cart {
+			margin-bottom: 50px;
+		}
+	}
 }
 
 
@@ -729,7 +734,6 @@
 		}
 	}
 	.footer {
-		// padding: 40px 20px;
 		padding: 0;
 		.container {
 			padding: 0;
@@ -857,6 +861,25 @@
 		&__option {
 			padding: 10px 20px;
 		}
+	}
+	.submenu {
+		&--sublevel1 &__item {
+			padding: 12px 10px;
+		}
+		&__item {
+			padding: 8px 10px 8px 3px;
+			font-weight: 500;
+			user-select: none;
+			outline-style: none;
+			font-size: 18px;
+		}
+		&__parent-item {
+			padding: 15px 10px;
+		}
+		&__parent-item-arrow {
+			margin-right: 10px;
+		}
+
 	}
 }
 

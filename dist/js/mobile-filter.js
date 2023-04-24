@@ -20,31 +20,6 @@ mobileFilterApply.onclick = function() {
 }
 
 
-// // MOBILE FILTER SORT
-// let mobileFilterSort 			= document.querySelector('.mobile-filter__select');
-// let mobileFilterSortOptionAll 	= document.querySelectorAll('.mobile-filter__select-option');
-
-
-// //  MOBILE FILTER SORT SELECT
-// mobileFilterSort.addEventListener('click', function(event) {
-// 	let target = event.target;
-// 	if(target.closest('.mobile-filter__select-current')) {
-// 		this.classList.toggle('mobile-filter__select--active');
-// 	}
-
-// 	if(target.closest('.mobile-filter__select-option')) {
-// 		let option = target.closest('.mobile-filter__select-option');
-// 		mobileFilterSortOptionAll.forEach(item=> {
-// 			item.classList.remove('mobile-filter__select-option--active');
-// 		})
-// 		option.classList.add('mobile-filter__select-option--active');
-// 		this.classList.remove('mobile-filter__select--active');
-// 	}
-// 	let currentOption = this.querySelector('.mobile-filter__select-option--active');
-// 	this.querySelector('.mobile-filter__select-current').innerHTML = currentOption.innerHTML;
-// })
-
-
 // MOBILE FILTER POPUP SELECT OPTION
 mobileFilterShow.addEventListener('click', function(event) {
 	this.classList.toggle('mobile-filter__show--active');

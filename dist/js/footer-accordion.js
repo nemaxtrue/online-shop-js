@@ -15,8 +15,6 @@ window.addEventListener('resize', function(event) {
 		FOOTER.classList.remove('footer-accordion');
 	}
 })
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
 
 // ACCORDION

@@ -1,13 +1,8 @@
-/*	0. SELECTOR
-	1. DROPDOWN MENU
-*/ 	
-
-// 0. SELECTOR 
 let headerMenu = document.querySelector('.header-menu');
 let dropAll = document.querySelectorAll('.header-menu__drop');
 
 
-// 1. DROPDOWN MENU
+// DROPDOWN MENU
 headerMenu.onmouseover = function() {
 	let target = event.target.closest('.header-menu__link');
 	if(!target) return;

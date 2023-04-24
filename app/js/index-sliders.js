@@ -9,7 +9,7 @@ const heroSwiper = new Swiper('.hero__slider', {
 		prevEl: '.swiper-button-prev',
 	},
 	autoplay: {
-		delay: 4000,
+		delay: 5000,
 	},
 	pagination: {
     	el: '.swiper-pagination',
@@ -43,7 +43,7 @@ const caressshopSwiper = new Swiper('.caressshop__slider', {
 		prevEl: '.swiper-button-prev',
 	},
 	autoplay: {
-		delay: 4000,
+		delay: 5000,
 	},
 	pagination: {
     	el: '.swiper-pagination',
